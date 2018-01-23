@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="95ab0d23-ca9d-49e0-82a5-ef70c544ec1b"
+mode="Global"
+rxversion="8.0">
+	<name>
+		FailTest
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="FailTest"
+	namespace="JiraJenkinsIntegration">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="FailTest"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="weFail"
+		namespace="JiraJenkinsIntegration"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c9c2ba6e-c15c-48a5-87a0-769ebbe8a0fe">
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="b2021cd4-40d6-4151-8c44-9b9d09e34dda"
+	name="JiraJenkinsIntegrationRepository"
+	relativepath="JiraJenkinsIntegrationRepository.rxrep"
+	rxversion="8.0">
+		<codegen
+		classname="JiraJenkinsIntegrationRepository"
+		namespace="JiraJenkinsIntegration">
+		</codegen>
+		<rootfolder
+		id="b61a4d40-17bc-48d1-b278-c4a496d8d906"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		FailTest.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

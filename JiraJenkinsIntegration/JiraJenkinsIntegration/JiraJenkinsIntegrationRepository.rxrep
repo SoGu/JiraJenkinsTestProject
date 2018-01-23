@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="JiraJenkinsIntegrationRepository"
+id="b2021cd4-40d6-4151-8c44-9b9d09e34dda"
+rxversion="8.0">
+  <codegen
+  classname="JiraJenkinsIntegrationRepository"
+  namespace="JiraJenkinsIntegration"/>
+  <rootfolder
+  name="Root"
+  id="b61a4d40-17bc-48d1-b278-c4a496d8d906"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>

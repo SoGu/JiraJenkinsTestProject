@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="8.0">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="JiraJenkinsIntegration"
+      id="00c60885-e7be-4a5a-831a-cd3eddaee68a"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="JiraJenkinsIntegration"
+      id="00c60885-e7be-4a5a-831a-cd3eddaee68a"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
