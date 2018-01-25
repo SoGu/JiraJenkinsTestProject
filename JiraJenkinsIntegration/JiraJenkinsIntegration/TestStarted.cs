@@ -81,8 +81,8 @@ namespace JiraJenkinsIntegration
 
             Report.Log(ReportLevel.Info, "User", "Test started", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Application", "Run application 'app\\RxTestApplication.exe' with arguments '' in normal mode.", new RecordItemIndex(1));
-            Host.Local.RunApplication("app\\RxTestApplication.exe", "", "", false);
+            Report.Log(ReportLevel.Info, "Application", "Run application 'app\\\\RxTestApplication.exe' with arguments '' in normal mode.", new RecordItemIndex(1));
+            Host.Local.RunApplication("app\\\\RxTestApplication.exe", "", "", false);
             Delay.Milliseconds(0);
             
         }
