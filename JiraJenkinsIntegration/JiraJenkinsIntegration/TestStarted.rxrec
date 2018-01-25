@@ -50,7 +50,7 @@ rxversion="8.0">
 			<bindings>
 			</bindings>
 			<filename>
-				.\app\RxTestApplication.exe
+				app\RxTestApplication.exe
 			</filename>
 			<args>
 			</args>
