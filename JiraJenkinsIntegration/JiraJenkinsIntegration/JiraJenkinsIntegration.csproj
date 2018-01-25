@@ -152,6 +152,10 @@
     <None Include="app.config">
       <id>d0699e17-7e55-4ed6-974a-506d5de8fe20</id>
     </None>
+    <None Include="app\RxTestApplication.exe">
+      <id>d1709b01-f7e9-4da2-a739-97958e02f1ea</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="FailTest.rxrec">
       <BoundTo>6cca5f8f-7029-46a0-a6ba-fb14b6222a3b</BoundTo>
       <id>2d557f10-f7fc-4667-b82d-9f87880cafaa</id>
@@ -183,6 +187,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>4d4fc1f6-a964-484c-9410-93278ecb0752</id>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app">
+      <id>c1c5961e-7078-4143-866f-ebe96bb49d3e</id>
+    </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

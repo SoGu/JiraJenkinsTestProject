@@ -41,6 +41,20 @@ rxversion="8.0">
 			<bindings>
 			</bindings>
 		</loggingrecorditem>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<filename>
+				.\app\RxTestApplication.exe
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
 	</recorditems>
 	<repository
 	id="b2021cd4-40d6-4151-8c44-9b9d09e34dda"
