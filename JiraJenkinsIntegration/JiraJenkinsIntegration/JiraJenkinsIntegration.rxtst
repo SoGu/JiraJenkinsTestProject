@@ -115,8 +115,5 @@ rxversion="8.0">
 		</testconfiguration>
 	</testconfigurations>
 	<references>
-		<reference>
-			C:\Program Files (x86)\Ranorex 8.0\Bin\Ranorex.Bootstrapper.dll
-		</reference>
 	</references>
 </testsuitedoc>
