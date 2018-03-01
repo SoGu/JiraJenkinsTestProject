@@ -55,7 +55,6 @@ rxversion="8.0">
 			TracingScreenshotQuality="40"
 			enabletracingscreenshots="True"
 			id="738bf8bd-03f8-4303-bfa8-22529422ab9e"
-			junitreport="True"
 			name="JiraJenkinsIntegration"
 			placescreenshotsinfolder="True"
 			reportcompress="False"

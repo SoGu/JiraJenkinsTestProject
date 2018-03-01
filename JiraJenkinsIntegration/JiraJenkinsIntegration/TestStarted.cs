@@ -114,6 +114,8 @@ namespace JiraJenkinsIntegration
             repo.RxMainFrame.RxTabStandard.BtnAddPerson.Click("10;3");
             Delay.Milliseconds(200);
             
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.RxMainFrame.Self, false, new RecordItemIndex(9));
+            
         }
 
 #region Image Feature Data
