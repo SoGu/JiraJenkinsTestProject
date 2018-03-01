@@ -27,6 +27,7 @@ namespace JiraJenkinsIntegration
     public partial class JiraJenkinsIntegrationRepository : RepoGenBaseFolder
     {
         static JiraJenkinsIntegrationRepository instance = new JiraJenkinsIntegrationRepository();
+        JiraJenkinsIntegrationRepositoryFolders.RxMainFrameAppFolder _rxmainframe;
 
         /// <summary>
         /// Gets the singleton class instance representing the JiraJenkinsIntegrationRepository element repository.
@@ -43,6 +44,7 @@ namespace JiraJenkinsIntegration
         public JiraJenkinsIntegrationRepository() 
             : base("JiraJenkinsIntegrationRepository", "/", null, 0, false, "b61a4d40-17bc-48d1-b278-c4a496d8d906", ".\\RepositoryImages\\JiraJenkinsIntegrationRepositoryb61a4d40.rximgres")
         {
+            _rxmainframe = new JiraJenkinsIntegrationRepositoryFolders.RxMainFrameAppFolder(this);
         }
 
 #region Variables
@@ -60,6 +62,15 @@ namespace JiraJenkinsIntegration
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The RxMainFrame folder.
+        /// </summary>
+        [RepositoryFolder("b4a33c9a-0d93-4bc1-adc4-7cb748083b30")]
+        public virtual JiraJenkinsIntegrationRepositoryFolders.RxMainFrameAppFolder RxMainFrame
+        {
+            get { return _rxmainframe; }
+        }
     }
 
     /// <summary>
@@ -68,6 +79,201 @@ namespace JiraJenkinsIntegration
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
     public partial class JiraJenkinsIntegrationRepositoryFolders
     {
+        /// <summary>
+        /// The RxMainFrameAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("b4a33c9a-0d93-4bc1-adc4-7cb748083b30")]
+        public partial class RxMainFrameAppFolder : RepoGenBaseFolder
+        {
+            JiraJenkinsIntegrationRepositoryFolders.RxTabStandardFolder _rxtabstandard;
+            RepoItemInfo _standardcontrolsInfo;
+
+            /// <summary>
+            /// Creates a new RxMainFrame  folder.
+            /// </summary>
+            public RxMainFrameAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("RxMainFrame", "/form[@controlname='RxMainFrame']", parentFolder, 30000, null, true, "b4a33c9a-0d93-4bc1-adc4-7cb748083b30", "")
+            {
+                _rxtabstandard = new JiraJenkinsIntegrationRepositoryFolders.RxTabStandardFolder(this);
+                _standardcontrolsInfo = new RepoItemInfo(this, "StandardControls", "?/?/tabpage[@accessiblename='Standard controls']", 30000, null, "69629d3c-c4f3-4837-9059-ba05736ec5b5");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("b4a33c9a-0d93-4bc1-adc4-7cb748083b30")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("b4a33c9a-0d93-4bc1-adc4-7cb748083b30")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The StandardControls item.
+            /// </summary>
+            [RepositoryItem("69629d3c-c4f3-4837-9059-ba05736ec5b5")]
+            public virtual Ranorex.TabPage StandardControls
+            {
+                get
+                {
+                    return _standardcontrolsInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The StandardControls item info.
+            /// </summary>
+            [RepositoryItemInfo("69629d3c-c4f3-4837-9059-ba05736ec5b5")]
+            public virtual RepoItemInfo StandardControlsInfo
+            {
+                get
+                {
+                    return _standardcontrolsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RxTabStandard folder.
+            /// </summary>
+            [RepositoryFolder("c5cd844a-f8e4-4132-8331-b03cb84562fa")]
+            public virtual JiraJenkinsIntegrationRepositoryFolders.RxTabStandardFolder RxTabStandard
+            {
+                get { return _rxtabstandard; }
+            }
+        }
+
+        /// <summary>
+        /// The RxTabStandardFolder folder.
+        /// </summary>
+        [RepositoryFolder("c5cd844a-f8e4-4132-8331-b03cb84562fa")]
+        public partial class RxTabStandardFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _firstnameInfo;
+            RepoItemInfo _updowneditInfo;
+            RepoItemInfo _btnaddpersonInfo;
+
+            /// <summary>
+            /// Creates a new RxTabStandard  folder.
+            /// </summary>
+            public RxTabStandardFolder(RepoGenBaseFolder parentFolder) :
+                    base("RxTabStandard", "?/?/tabpage[@controlname='RxTabStandard']", parentFolder, 30000, null, false, "c5cd844a-f8e4-4132-8331-b03cb84562fa", "")
+            {
+                _firstnameInfo = new RepoItemInfo(this, "FirstName", "?/?/text[@accessiblename='First name']", 30000, null, "373a75e8-2338-4e67-a6f1-96102ce24fe0");
+                _updowneditInfo = new RepoItemInfo(this, "UpDownEdit", "?/?/text[@controlname='upDownEdit']", 30000, null, "9d8b2c12-acce-4aa0-a0ae-d08b2a6573a6");
+                _btnaddpersonInfo = new RepoItemInfo(this, "BtnAddPerson", "button[@controlname='btnAddPerson']", 30000, null, "69c5b781-8ec1-4a13-86bd-8952887bb822");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("c5cd844a-f8e4-4132-8331-b03cb84562fa")]
+            public virtual Ranorex.TabPage Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c5cd844a-f8e4-4132-8331-b03cb84562fa")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FirstName item.
+            /// </summary>
+            [RepositoryItem("373a75e8-2338-4e67-a6f1-96102ce24fe0")]
+            public virtual Ranorex.Text FirstName
+            {
+                get
+                {
+                    return _firstnameInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FirstName item info.
+            /// </summary>
+            [RepositoryItemInfo("373a75e8-2338-4e67-a6f1-96102ce24fe0")]
+            public virtual RepoItemInfo FirstNameInfo
+            {
+                get
+                {
+                    return _firstnameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UpDownEdit item.
+            /// </summary>
+            [RepositoryItem("9d8b2c12-acce-4aa0-a0ae-d08b2a6573a6")]
+            public virtual Ranorex.Text UpDownEdit
+            {
+                get
+                {
+                    return _updowneditInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UpDownEdit item info.
+            /// </summary>
+            [RepositoryItemInfo("9d8b2c12-acce-4aa0-a0ae-d08b2a6573a6")]
+            public virtual RepoItemInfo UpDownEditInfo
+            {
+                get
+                {
+                    return _updowneditInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnAddPerson item.
+            /// </summary>
+            [RepositoryItem("69c5b781-8ec1-4a13-86bd-8952887bb822")]
+            public virtual Ranorex.Button BtnAddPerson
+            {
+                get
+                {
+                    return _btnaddpersonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnAddPerson item info.
+            /// </summary>
+            [RepositoryItemInfo("69c5b781-8ec1-4a13-86bd-8952887bb822")]
+            public virtual RepoItemInfo BtnAddPersonInfo
+            {
+                get
+                {
+                    return _btnaddpersonInfo;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }

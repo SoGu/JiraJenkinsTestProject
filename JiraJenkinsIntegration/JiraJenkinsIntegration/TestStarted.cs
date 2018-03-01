@@ -85,6 +85,35 @@ namespace JiraJenkinsIntegration
             Host.Local.RunApplication("app\\RxTestApplication.exe", "", "", false);
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.StandardControls' at 46;9.", repo.RxMainFrame.StandardControlsInfo, new RecordItemIndex(2));
+            repo.RxMainFrame.StandardControls.Click("46;9");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.FirstName' at 93;8.", repo.RxMainFrame.RxTabStandard.FirstNameInfo, new RecordItemIndex(3));
+            repo.RxMainFrame.RxTabStandard.FirstName.Click("93;8");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'stefan' with focus on 'RxMainFrame.StandardControls'.", repo.RxMainFrame.StandardControlsInfo, new RecordItemIndex(4));
+            repo.RxMainFrame.StandardControls.PressKeys("stefan");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.UpDownEdit' at 36;3.", repo.RxMainFrame.RxTabStandard.UpDownEditInfo, new RecordItemIndex(5));
+            repo.RxMainFrame.RxTabStandard.UpDownEdit.Click("36;3");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'RxMainFrame.RxTabStandard.UpDownEdit'.", repo.RxMainFrame.RxTabStandard.UpDownEditInfo, new RecordItemIndex(6));
+            Keyboard.PrepareFocus(repo.RxMainFrame.RxTabStandard.UpDownEdit);
+            Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, 30, Keyboard.DefaultKeyPressTime, 1, true);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '36' with focus on 'RxMainFrame.RxTabStandard.UpDownEdit'.", repo.RxMainFrame.RxTabStandard.UpDownEditInfo, new RecordItemIndex(7));
+            repo.RxMainFrame.RxTabStandard.UpDownEdit.PressKeys("36");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.BtnAddPerson' at 10;3.", repo.RxMainFrame.RxTabStandard.BtnAddPersonInfo, new RecordItemIndex(8));
+            repo.RxMainFrame.RxTabStandard.BtnAddPerson.Click("10;3");
+            Delay.Milliseconds(200);
+            
         }
 
 #region Image Feature Data

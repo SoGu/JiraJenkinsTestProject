@@ -1,19 +1,101 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
-name="JiraJenkinsIntegrationRepository"
+﻿<repository
 id="b2021cd4-40d6-4151-8c44-9b9d09e34dda"
+name="JiraJenkinsIntegrationRepository"
 rxversion="8.0">
-  <codegen
-  classname="JiraJenkinsIntegrationRepository"
-  namespace="JiraJenkinsIntegration"/>
-  <rootfolder
-  name="Root"
-  id="b61a4d40-17bc-48d1-b278-c4a496d8d906"
-  searchtimeout="30000ms"
-  capname="unknown"
-  isrooted="True"
-  usecache="True">
-    <basepath/>
-  </rootfolder>
-  <variables/>
+	<codegen
+	classname="JiraJenkinsIntegrationRepository"
+	namespace="JiraJenkinsIntegration">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="b61a4d40-17bc-48d1-b278-c4a496d8d906"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="b4a33c9a-0d93-4bc1-adc4-7cb748083b30"
+		isrooted="True"
+		name="RxMainFrame"
+		refpath="/form[@controlname='RxMainFrame']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="tabpage,accessible"
+			capname="tabpage"
+			id="69629d3c-c4f3-4837-9059-ba05736ec5b5"
+			name="StandardControls"
+			refimgid="e9309aa3-c2ae-4740-8aea-1f4bf0f6b94d"
+			refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@accessiblename='Standard controls']"
+			searchtimeout="30000ms">
+				/form[@controlname='RxMainFrame']/?/?/tabpage[@accessiblename='Standard controls']
+			</item>
+			<folder
+			addcaps="tabpage,control,nativewindow"
+			capname="tabpage"
+			id="c5cd844a-f8e4-4132-8331-b03cb84562fa"
+			isrooted="True"
+			name="RxTabStandard"
+			refpath="/form[@controlname='RxMainFrame']/tabpagelist[@controlname='RxTabcontrol']/tabpage[@controlname='RxTabStandard']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="373a75e8-2338-4e67-a6f1-96102ce24fe0"
+				name="FirstName"
+				refimgid="5ceee79a-6367-405c-afb2-d96b68dc5190"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabStandard']/text[@controlname='txtFirstName']/text[@accessiblename='First name']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/?/?/text[@accessiblename='First name']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="9d8b2c12-acce-4aa0-a0ae-d08b2a6573a6"
+				name="UpDownEdit"
+				refimgid="dd0e3418-8c33-4c72-8a1b-28ceb62ac2e1"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabStandard']/container[@controlname='txtAge']/text[@controlname='upDownEdit']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/?/?/text[@controlname='upDownEdit']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="69c5b781-8ec1-4a13-86bd-8952887bb822"
+				name="BtnAddPerson"
+				refimgid="17bac7f8-91c0-4f19-84f4-1c33612a69ee"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabStandard']/button[@controlname='btnAddPerson']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/button[@controlname='btnAddPerson']
+				</item>
+				<basepath>
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='RxMainFrame']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAIxSURBVDhPtZJfSFNhGMa/YcJ0MsUbQXbGNp0b
+Dpc6FESJQWMg/sELweXwH9iNXcgg142BFUMSbNBFbJBXsovhbVdK5U1RFwamdCqoDXSbnc01Y1ju
+Yk/vOTtbzQrqoh88nO+8z/c+38t3DvuvxFpbtTGO+xxh7L5c+jPPNZoqeVniqLv7NLu+jtz+PgSX
+C3L5V97o9SePzOayDUmn05aamUF6fh4ny8s443nkGbsp2z+Ic5yHb2vDpsmEB3V1d+UyS7ndSI6O
+IjU+DsHrBfr7xQN+VoFER8db3mrFZksLvGTkw+Gq48nJndTEBIShIXwaHMTX5ubzzaI2SAV4s3mr
+GAC/H+mFBRzPzuLL2BjWjEZc9fkQCoV+F3KBVOCZ0XhvpbYWZ4uLyJC+eTy4TpORhUgkIj2DwSAC
+gQA85CmVSrF2IPaWSE9NITU3h8zSEl46ncVTkMvlICKu3XQ3Ppqo6JEKxHt7M8mREWl0rK7iGpm7
+dLFkIU8BDocDdrsdgiAgm80Wm2+w94ypYzodEjYbhIEBHA0PR/npadyprkaI45Bpb4eusrLYUFJF
+RYX4ZCyqUGwfNjQgbrEg0dkpFXf6+qy3VCqEtVo8pSmi4ldqaioLIF0kSbegOVCrEaMN8a6uS1KR
+8NfU7G7IAXsU/o5+tBd6/bZslxNVqS4fNjaW3SgdoVgzGKSA1xTwkQJODQaXbP8dT+rrVx5T4x7p
+g8VyWy7/G1sm08NXPT1X5NdzMPYdvekmfrie3soAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
 </repository>
