@@ -93,8 +93,8 @@ namespace JiraJenkinsIntegration
             repo.RxMainFrame.RxTabStandard.FirstName.Click("93;8");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'stefan' with focus on 'RxMainFrame.StandardControls'.", repo.RxMainFrame.StandardControlsInfo, new RecordItemIndex(4));
-            repo.RxMainFrame.StandardControls.PressKeys("stefan");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'stefan' with focus on 'RxMainFrame.RxTabStandard.FirstName'.", repo.RxMainFrame.RxTabStandard.FirstNameInfo, new RecordItemIndex(4));
+            repo.RxMainFrame.RxTabStandard.FirstName.PressKeys("stefan");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.UpDownEdit' at 36;3.", repo.RxMainFrame.RxTabStandard.UpDownEditInfo, new RecordItemIndex(5));
