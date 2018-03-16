@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="ce9a4500f6b538"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="sknopper"
+		rxversion="8.0.0.0"
+		host="RXLAPTOP030"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-AT"
+		screenresolution="3840x1200"
+		timestamp="25/01/2018 12:15:09"
+		timestampiso="2018-01-25T11:15:09"
+		endtime="25/01/2018 12:15:10"
+		timeoutfactor="1"
+		module="TestStarted">
+		<detail>
+			TestStarted
+		</detail>
+		<errormessage>
+			Failed to run application '.\app\RxTestApplication.exe'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.002"
+			timeRelativeToTestModuleStartTime="00:01.008"
+			timeWallClock="12:15:10"
+			time="00:01.002"
+			level="Info"
+			category="User"
+			errimg=".\TestStar_9e89f9e6_c6632c2a_trace.jpg"
+			errthumb=".\TestStar_9e89f9e6_c6632c2a_trace_thumb.jpg">
+			<message>
+				Test started
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="C:\GIT\JiraJenkinsTestProject\JiraJenkinsTestProject\JiraJenkinsIntegration\JiraJenkinsIntegration\TestStarted.cs"
+				codeline="82"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.024"
+			timeRelativeToTestModuleStartTime="00:01.030"
+			timeWallClock="12:15:10"
+			time="00:01.024"
+			level="Info"
+			category="Application"
+			errimg=".\TestStar_9e89f9e6_c6632c2a_trace.jpg"
+			errthumb=".\TestStar_9e89f9e6_c6632c2a_trace_thumb.jpg">
+			<message>
+				Run application '.\app\RxTestApplication.exe' with arguments '' in normal mode.
+			</message>
+			<metainfo
+				itemindex="1"
+				codefile="C:\GIT\JiraJenkinsTestProject\JiraJenkinsTestProject\JiraJenkinsIntegration\JiraJenkinsIntegration\TestStarted.cs"
+				codeline="84"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.057"
+			timeRelativeToTestModuleStartTime="00:01.063"
+			timeWallClock="12:15:10"
+			time="00:01.057"
+			level="Error"
+			category="Module"
+			errimg=".\TestStar_9e89f9e6_c6632c2a_trace.jpg"
+			errthumb=".\TestStar_9e89f9e6_c6632c2a_trace_thumb.jpg">
+			<message>
+				Failed to run application '.\app\RxTestApplication.exe'.<br/>The system cannot find the file specified
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Host.RunApplication(String fileName, String arguments, String workingDirectory, Boolean maximized)
+   at JiraJenkinsIntegration.TestStarted.Ranorex.Core.Testing.ITestModule.Run() in C:\GIT\JiraJenkinsTestProject\JiraJenkinsTestProject\JiraJenkinsIntegration\JiraJenkinsIntegration\TestStarted.cs:line 85
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\GIT\JiraJenkinsTestProject\JiraJenkinsTestProject\JiraJenkinsIntegration\JiraJenkinsIntegration\TestStarted.cs"
+				codeline="85"
+				loglvl="Error"
+				itemindex="1">
+			</metainfo>
+		</item>
+	</activity>
+</report>

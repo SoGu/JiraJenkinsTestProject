@@ -1,0 +1,18 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="TestStarted.rxrec" />
+  </Array>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="JiraJenkinsIntegration.rxtst" />
+    <Element value="TestStarted.rxrec" />
+    <Element value="TestStarted.cs" />
+    <Element value="FailTest.rxrec" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+    <Array name="recentusercodeselections" />
+  </Properties>
+</Properties>

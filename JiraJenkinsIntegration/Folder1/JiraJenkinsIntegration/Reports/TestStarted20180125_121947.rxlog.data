@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="22a3abb7ad99f62"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="sknopper"
+		rxversion="8.0.0.0"
+		host="RXLAPTOP030"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-AT"
+		screenresolution="3840x1200"
+		timestamp="25/01/2018 12:19:52"
+		timestampiso="2018-01-25T11:19:52"
+		endtime="25/01/2018 12:19:53"
+		timeoutfactor="1"
+		module="TestStarted">
+		<detail>
+			TestStarted
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.007"
+			timeRelativeToTestModuleStartTime="00:01.012"
+			timeWallClock="12:19:53"
+			time="00:01.007"
+			level="Info"
+			category="User">
+			<message>
+				Test started
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="C:\GIT\JiraJenkinsTestProject\JiraJenkinsTestProject\JiraJenkinsIntegration\JiraJenkinsIntegration\TestStarted.cs"
+				codeline="82"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.028"
+			timeRelativeToTestModuleStartTime="00:01.033"
+			timeWallClock="12:19:53"
+			time="00:01.028"
+			level="Info"
+			category="Application">
+			<message>
+				Run application 'app\RxTestApplication.exe' with arguments '' in normal mode.
+			</message>
+			<metainfo
+				itemindex="1"
+				codefile="C:\GIT\JiraJenkinsTestProject\JiraJenkinsTestProject\JiraJenkinsIntegration\JiraJenkinsIntegration\TestStarted.cs"
+				codeline="84"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>
