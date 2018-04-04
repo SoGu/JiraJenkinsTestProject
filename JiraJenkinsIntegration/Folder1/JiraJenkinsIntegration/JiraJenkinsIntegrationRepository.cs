@@ -22,7 +22,7 @@ namespace JiraJenkinsIntegration
     /// <summary>
     /// The class representing the JiraJenkinsIntegrationRepository element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
     [RepositoryFolder("b61a4d40-17bc-48d1-b278-c4a496d8d906")]
     public partial class JiraJenkinsIntegrationRepository : RepoGenBaseFolder
     {
@@ -76,7 +76,7 @@ namespace JiraJenkinsIntegration
     /// <summary>
     /// Inner folder classes.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
     public partial class JiraJenkinsIntegrationRepositoryFolders
     {
         /// <summary>

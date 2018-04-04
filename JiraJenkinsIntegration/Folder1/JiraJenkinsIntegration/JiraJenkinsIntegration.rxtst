@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
-rxversion="8.0">
+rxversion="8.1">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<smartfoldernode
@@ -134,13 +134,7 @@ rxversion="8.0">
 			name="setup">
 			</setup>
 			<testmodule
-			id="ce05a88e-0a8f-40e5-9f11-2ed685ecc894"
-			name="FailTest"
-			ref="95ab0d23-ca9d-49e0-82a5-ef70c544ec1b"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="f45a7d02-63d4-4f85-a2d5-917587f75809"
+			id="c853c6ad-69ca-4d26-bfc8-9538bb2c3dfc"
 			name="InitializeDefaultConfiguration"
 			ref="76ff8843-49b3-4968-9c30-ce917ab28d5e"
 			type="UserCode">
@@ -231,6 +225,12 @@ rxversion="8.0">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="ce05a88e-0a8f-40e5-9f11-2ed685ecc894"
+			name="FailTest"
+			ref="95ab0d23-ca9d-49e0-82a5-ef70c544ec1b"
+			type="Recording">
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -243,7 +243,7 @@ rxversion="8.0">
 					id="a27b0a46-faff-4da1-b45f-f238df053b7a"
 					name="setup">
 						<testmodule
-						id="f45a7d02-63d4-4f85-a2d5-917587f75809"
+						id="c853c6ad-69ca-4d26-bfc8-9538bb2c3dfc"
 						name="InitializeDefaultConfiguration">
 						</testmodule>
 					</setup>

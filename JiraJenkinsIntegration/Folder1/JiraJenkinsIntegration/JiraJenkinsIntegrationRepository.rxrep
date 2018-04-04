@@ -1,7 +1,8 @@
-﻿<repository
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
 id="b2021cd4-40d6-4151-8c44-9b9d09e34dda"
 name="JiraJenkinsIntegrationRepository"
-rxversion="8.0">
+rxversion="8.1">
 	<codegen
 	classname="JiraJenkinsIntegrationRepository"
 	namespace="JiraJenkinsIntegration">

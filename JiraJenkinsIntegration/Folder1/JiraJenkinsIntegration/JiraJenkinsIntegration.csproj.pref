@@ -1,7 +1,4 @@
 ﻿<Properties>
-  <Array name="active">
-    <Element value="JiraJenkinsIntegration.rxtst" />
-  </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="JiraJenkinsIntegration.rxtst" />

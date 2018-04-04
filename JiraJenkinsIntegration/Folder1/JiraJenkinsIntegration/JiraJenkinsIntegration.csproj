@@ -9,7 +9,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>JiraJenkinsIntegration</RootNamespace>
     <AssemblyName>JiraJenkinsIntegration</AssemblyName>
-    <RanorexVersion>8.0</RanorexVersion>
+    <RanorexVersion>8.1</RanorexVersion>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>6cca5f8f-7029-46a0-a6ba-fb14b6222a3b</projectdefaultrepository>

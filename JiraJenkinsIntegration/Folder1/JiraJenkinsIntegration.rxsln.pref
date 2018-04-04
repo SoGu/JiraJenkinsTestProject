@@ -4,8 +4,8 @@
   <SerializedValue name="ModuleBrowserState">
     <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <string>{33F9F499-399D-4026-91B9-42D70599F461}</string>
-      <string>6e12a760-6636-488c-b3e9-7d256aa61ae5</string>
       <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>Ranorex_JiraIntegration, Version=1.0.6668.25678, Culture=neutral, PublicKeyToken=null</string>
     </ArrayOfString>
   </SerializedValue>
   <ProjectBrowserState value="[Solution JiraJenkinsIntegration[JiraJenkinsIntegration[Reports[]app[]TestStarted.rxrec[]]]]&#xD;&#xA;Solution JiraJenkinsIntegration\JiraJenkinsIntegration\JiraJenkinsIntegration.rxtst&#xD;&#xA;Solution JiraJenkinsIntegration" />

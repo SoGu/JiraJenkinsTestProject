@@ -421,9 +421,9 @@ tr.Success {
 }
 
 .retryLabel {
-    font-size: 11px;    
+    font-size: 11px;
     color: #999;
-    font-weight: 400;    
+    font-weight: 400;
     margin-left: -2px;
     margin-right: 8px;
 }
@@ -921,6 +921,46 @@ tr.Success.MaintenanceMode td.timeCell {
     padding-left: 30px;
 }
 
+/* Integration error background in report */
+
+table.Integration tr.Error {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAPoCAYAAAArz1VCAAAEXElEQVR4nO3WsWsbZxjH8d/JdurWSzu0LtTEawYP9qKtMiJkyRBjgyAE8l+4f0A8ZDlMIIsW/Q+OhhgyxCU2GSITEFmUJcOBHSfR0MgC1TrJ+nVQ7yJFMqgpdaB8X7hB7/u893mf59W9d0EkWRO0q3YwSdznLQgCZb5k4j9tICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICCf2vQkQVeyWUnalPSrpGVJv0g6llSVdCBpX1LlwhtEki+63i4t+c+9PU/Y9mwv2dbgJUlBJHkcPpvP66enT6UgUOf1a53t7upsf1+dalXdoyNNLyxoZnlZs7mcZm/e1My1a1L/Xtcl/Z7cJwiC8Zm8z+fT5TWLRZ+srFyYbST5ZGXFzWJxMKv8YCYjyNulJbvXs21/3NpylMk4klzf2HCzVHJcq7kXx45rNTdLJdc3NvpzMxl/3NpKkF5SurFIsgfNYtFRJuOj+Xk3wtDudsfvRLfrRhj6aH7eUSYzmNHeWOQkm7Vtx7VaWqJGGE60640wTEsX12pJd3YE+WNz07Z9ur2dlijJoLWz43qh4HalYttuVyquFwpu7eykGSWlO93eTpDNEaRVLtu2P6ytOZLcLJXSldbX19M/Ratc9vt8vr+Q9fU0plkqOZL8YW0t6SqPIJ0osm0fLy46kgbTdvvw0O9yuaH9e7e66vbhYRoT12qOJB8vLiZd0QiSlCaamnIkuRfHQ3VvPX6cjkWSW48eDY334rg/NjWVdHWlz86u7vGxJGl6YaH/+82bdKzz6pWaDx9K5+dp3+mDB4pfvvw0/+/4ZL76R88w0qlWJUkzy8uSpPbz5+lY4/59nT15om9WV/VjuazZGzfUfvZMjXv30pgkPpmv/tk2jLQPDiRJs7mcJOlsdzdd+dzt2/quUNAPYahvb93S92GouTt3NHf3bn/y+Xk/fmC++ofnV3hOLuWJv7Sz6784hb/e++TS3oyD7Uo2q59fvPhNX/COD4JgMkSSrtrBJHHjkP/PdxcICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAjIv29/AZzbY47bVes2AAAAAElFTkSuQmCC');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+table.Integration tr th {
+    background-color: #fff;
+}
+
+table.Integration tr td.timeCell {
+    padding-left: 30px;
+}
+
+table.Integration tr.Error {
+    color: #202020;
+    background-color: #fff;
+}
+
+table.Integration tr.Error td .stacktrace, table.Integration tr.Error .stacktrace p {
+    color: #202020;
+}
+
+#integration-testsuite {
+    border: 1px solid #e10000;
+    border-top: 3px solid #e10000;
+    background-color: #f9cccc;
+}
+
+#integration-testsuite > h2 {
+    font-size: 14px;
+}
+
+#integration-testsuite .module-report {
+    padding-top: 0;
+}
+
+
 /* Used for jump-to-functionality */
 .controls-container {
     position: absolute;
@@ -1027,7 +1067,7 @@ tr.error .stacktrace, tr.error .stacktrace p, tr.failure .stacktrace, tr.failure
 }
 
 /* General style for messages */
-.datarow, .dataparams, .errormessage, .warnmessage {
+.datarow, .dataparams, .errormessage, .warnmessage, .integration-errormessage {
     margin-left: 0;
     font-size: 12px;
     padding: 6px 25px 5px;
@@ -1049,6 +1089,12 @@ tr.error .stacktrace, tr.error .stacktrace p, tr.failure .stacktrace, tr.failure
 .warnmessage {
     background-color: #F8D59C;
     margin-left: 0;
+}
+
+.integration-errormessage {
+    background-color: #fff;
+    border: 1px solid #e10000;
+    border-top: 3px solid #e10000;
 }
 
 .dataparams td, .datarow td {

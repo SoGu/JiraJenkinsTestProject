@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="95ab0d23-ca9d-49e0-82a5-ef70c544ec1b"
 mode="Global"
-rxversion="8.0">
+rxversion="8.1">
 	<name>
 		FailTest
 	</name>

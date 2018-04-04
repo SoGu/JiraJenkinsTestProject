@@ -1,5 +1,5 @@
 ﻿<configuration
-rxversion="8.0">
+rxversion="8.1">
 	<adapter.defaultsearchtimeout>
 		10000ms
 	</adapter.defaultsearchtimeout>
@@ -467,6 +467,8 @@ rxversion="8.0">
 	</plugins.win32.EnableDynamicMsaa>
 	<plugins.win32.ProcessWhitelist>
 	</plugins.win32.ProcessWhitelist>
+	<plugins.win32.ProcessBlacklist>
+	</plugins.win32.ProcessBlacklist>
 	<plugins.msaa.FilterEnabled>
 		True
 	</plugins.msaa.FilterEnabled>

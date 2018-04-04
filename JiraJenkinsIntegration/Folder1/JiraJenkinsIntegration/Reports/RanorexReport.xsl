@@ -114,7 +114,14 @@
 
               <xsl:if test=".//item[@level='Warn']">
                 <div class="warnmessage">
-                  <span class="ui-module-icon warn"></span> Warnings occurred. For additional information see the report of the individual modules, please.
+                  <span class="ui-module-icon warn"/> Warnings occurred. For additional information see the report of the individual modules, please.
+                </div>
+              </xsl:if>
+              <xsl:if test="./activity[@type='integration']">
+                <div class="integration-errormessage">
+                  <span class="ui-module-icon error"/>
+                    Integration service <xsl:value-of select="./activity[@type='integration']/@integrationtype" /> has encountered some errors.
+                  <a href="#integrationsection">Click here to navigate to the integration section.</a>
                 </div>
               </xsl:if>
 
@@ -226,6 +233,42 @@
                   </li>
                 </xsl:if>
                 <!-- POST TEST SUITE END -->
+              
+                <!-- INTEGRATION SECTION BEGIN -->
+                <xsl:if test="./activity[@type='integration']">
+                  <a name="integrationsection"></a>
+                  <li class="ui-treeList-item" id="integration-testsuite">
+                    <h2>
+                      <xsl:value-of select="./activity[@type='integration']/@integrationtype" /> Report Section
+                    </h2>
+                    <ul class="pre-testsuite">
+                      <div class="module-report">
+                        <TABLE border="0" cellSpacing="0" class="Integration">
+                          <thead>
+                            <th>
+                              <b>Time</b>
+                            </th>
+                            <th>
+                              <b>Level</b>
+                            </th>
+                            <th>
+                              <b>Category</b>
+                            </th>
+                            <th>
+                              <b>Message</b>
+                            </th>
+                          </thead>
+                          <tbody>
+                            <xsl:apply-templates select="./activity[@type='integration']/item">
+                              <xsl:with-param name="type">standalone</xsl:with-param>
+                            </xsl:apply-templates>
+                          </tbody>
+                        </TABLE>
+                      </div>
+                    </ul>
+                  </li>
+                </xsl:if>
+                <!-- INTEGRATION SECTION END -->
               </ul>
             </xsl:when>
 
@@ -288,7 +331,7 @@
               </xsl:choose>
             </xsl:otherwise>
           </xsl:choose>
-        </div>
+            </div>
         <xsl:choose>
           <xsl:when test="../@progress != '' ">
             <div style="width:99%; text-align:center;padding-bottom: 10px;">
