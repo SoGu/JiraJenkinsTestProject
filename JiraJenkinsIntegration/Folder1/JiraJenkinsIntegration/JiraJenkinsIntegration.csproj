@@ -151,6 +151,18 @@
       <UserCode>true</UserCode>
       <id>f8e1a49b-19e5-4aa7-80b3-ae1ca80623f1</id>
     </Compile>
+    <Compile Include="UpdateJiraFields.cs">
+      <BoundTo>b496e9b8-a295-4349-a4ef-8299c31a3ff5</BoundTo>
+      <DependentUpon>UpdateJiraFields.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>774c815d-8ebc-4c89-85fe-a10865ace91d</id>
+    </Compile>
+    <Compile Include="UpdateJiraFields.UserCode.cs">
+      <BoundTo>b496e9b8-a295-4349-a4ef-8299c31a3ff5</BoundTo>
+      <DependentUpon>UpdateJiraFields.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f2c9eca1-0183-421f-a34d-cd0d817b9b04</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -195,6 +207,11 @@
       <BoundTo>6cca5f8f-7029-46a0-a6ba-fb14b6222a3b</BoundTo>
       <id>8cddb509-12ca-4513-8776-890aed6306a0</id>
       <recordtableid>4076e89c-1316-4488-be4a-448986c23303</recordtableid>
+    </None>
+    <None Include="UpdateJiraFields.rxrec">
+      <BoundTo>6cca5f8f-7029-46a0-a6ba-fb14b6222a3b</BoundTo>
+      <id>b496e9b8-a295-4349-a4ef-8299c31a3ff5</id>
+      <recordtableid>cb090789-0cc1-4d34-b0f8-b756200a1417</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>
