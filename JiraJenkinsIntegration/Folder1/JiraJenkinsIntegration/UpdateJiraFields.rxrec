@@ -86,7 +86,7 @@ rxversion="8.1">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						test
+						Eine Kaskade
 					</argvalue>
 				</argument>
 				<argument
@@ -96,7 +96,7 @@ rxversion="8.1">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						34
+						test
 					</argvalue>
 				</argument>
 				<argument
@@ -106,6 +106,7 @@ rxversion="8.1">
 						System.String
 					</argvaluetype>
 					<argvalue>
+						34
 					</argvalue>
 				</argument>
 			</arguments>
