@@ -111,7 +111,7 @@ rxversion="8.1">
 					</param>
 					<param
 					name="JiraPassword"
-					value="rx123!!">
+					value="rxtest">
 					</param>
 				</parameters>
 			</testcase>
