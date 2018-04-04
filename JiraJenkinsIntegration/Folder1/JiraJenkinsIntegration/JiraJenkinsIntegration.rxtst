@@ -28,6 +28,16 @@ rxversion="8.0">
 					</condition>
 				</conditiongroup>
 			</smartfoldernode>
+			<teardown
+			id="222d5d23-dce2-4953-a7be-d39b25913e76"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="3a23fdd9-85a8-4906-bbdd-52a9e9779797"
+			name="AutoCreateNewIssueIfTestCaseFails"
+			ref="de17f33e-345f-416f-9f58-505b5e34aae3"
+			type="UserCode">
+			</testmodule>
 			<testmodule
 			id="45d9dbf5-4637-4889-992e-815466598a70"
 			name="TestStarted"
@@ -47,6 +57,62 @@ rxversion="8.0">
 					name="fail"
 					value="false">
 					</param>
+					<param
+					name="JiraProjectKey"
+					value="PSIN">
+					</param>
+					<param
+					name="JiraIssueType"
+					value="Bug">
+					</param>
+					<param
+					name="JiraSummary"
+					value="">
+					</param>
+					<param
+					name="JiraDescription"
+					value="">
+					</param>
+					<param
+					name="JiraLabels"
+					value="">
+					</param>
+					<param
+					name="StateClosed"
+					value="">
+					</param>
+					<param
+					name="StateReopen"
+					value="">
+					</param>
+					<param
+					name="RxAutomationFieldName"
+					value="">
+					</param>
+					<param
+					name="jqlQueryToConnectIssues"
+					value="">
+					</param>
+					<param
+					name="jiraIssuePriority"
+					value="">
+					</param>
+					<param
+					name="jiraEnvironment"
+					value="">
+					</param>
+					<param
+					name="JiraUserName"
+					value="automationuser">
+					</param>
+					<param
+					name="JiraServerURL"
+					value="http://rxpresales006/jira">
+					</param>
+					<param
+					name="JiraPassword"
+					value="rx123!!">
+					</param>
 				</parameters>
 			</testcase>
 			<testsuite
@@ -63,11 +129,107 @@ rxversion="8.0">
 			reportwriteinterval="30000ms"
 			showinvisiblechars="True">
 			</testsuite>
+			<setup
+			id="a27b0a46-faff-4da1-b45f-f238df053b7a"
+			name="setup">
+			</setup>
 			<testmodule
 			id="ce05a88e-0a8f-40e5-9f11-2ed685ecc894"
 			name="FailTest"
 			ref="95ab0d23-ca9d-49e0-82a5-ef70c544ec1b"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="f45a7d02-63d4-4f85-a2d5-917587f75809"
+			name="InitializeDefaultConfiguration"
+			ref="76ff8843-49b3-4968-9c30-ce917ab28d5e"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="JiraProjectKey"
+					datasourceid="69106a0d-99d9-41e0-bd7f-1af761164611"
+					variableid="2dc0bbb3-c44a-42b6-a695-9fb1abff8d84"
+					variablename="JiraProjectKey">
+					</var>
+					<var
+					dataname="JiraIssueType"
+					datasourceid="69106a0d-99d9-41e0-bd7f-1af761164611"
+					variableid="d9248964-3f28-4abe-a5a8-324c190cf2f4"
+					variablename="JiraIssueType">
+					</var>
+					<var
+					dataname="JiraSummary"
+					datasourceid="69106a0d-99d9-41e0-bd7f-1af761164611"
+					variableid="e16ac939-1d71-4936-8009-de50e23325ca"
+					variablename="JiraSummary">
+					</var>
+					<var
+					dataname="JiraDescription"
+					datasourceid="69106a0d-99d9-41e0-bd7f-1af761164611"
+					variableid="835f55d5-961e-4f62-aae1-0aa992c725ef"
+					variablename="JiraDescription">
+					</var>
+					<var
+					dataname="JiraLabels"
+					datasourceid="69106a0d-99d9-41e0-bd7f-1af761164611"
+					variableid="ab382eab-9609-430a-b18e-46b19a493a5f"
+					variablename="JiraLabels">
+					</var>
+					<var
+					dataname="StateClosed"
+					datasourceid="69106a0d-99d9-41e0-bd7f-1af761164611"
+					variableid="c4f14a65-db66-4381-babd-921e14077be6"
+					variablename="StateClosed">
+					</var>
+					<var
+					dataname="StateReopen"
+					datasourceid="69106a0d-99d9-41e0-bd7f-1af761164611"
+					variableid="f6201ada-3a5b-4879-b9e1-2d9c839b2736"
+					variablename="StateReopen">
+					</var>
+					<var
+					dataname="RxAutomationFieldName"
+					datasourceid="69106a0d-99d9-41e0-bd7f-1af761164611"
+					variableid="24aac369-38ab-45ec-8a87-c79ec20cfd07"
+					variablename="RxAutomationFieldName">
+					</var>
+					<var
+					dataname="jqlQueryToConnectIssues"
+					datasourceid="69106a0d-99d9-41e0-bd7f-1af761164611"
+					variableid="0FA988AE-AAE9-40C4-9386-F51B13E8C96B7"
+					variablename="jqlQueryToConnectIssues">
+					</var>
+					<var
+					dataname="jiraIssuePriority"
+					datasourceid="69106a0d-99d9-41e0-bd7f-1af761164611"
+					variableid="153c1454-fac1-49b6-bb0e-3126b0c1c0b1"
+					variablename="jiraIssuePriority">
+					</var>
+					<var
+					dataname="jiraEnvironment"
+					datasourceid="69106a0d-99d9-41e0-bd7f-1af761164611"
+					variableid="df32f91e-a96c-40ea-b3e8-2e2154bf1012"
+					variablename="jiraEnvironment">
+					</var>
+					<var
+					dataname="JiraUserName"
+					datasourceid="69106a0d-99d9-41e0-bd7f-1af761164611"
+					variableid="87147480-a368-4c8d-935a-ac9928641b17"
+					variablename="JiraUserName">
+					</var>
+					<var
+					dataname="JiraServerURL"
+					datasourceid="69106a0d-99d9-41e0-bd7f-1af761164611"
+					variableid="2d58eee0-06de-4d7e-9c04-dca5cd7a1a91"
+					variablename="JiraServerURL">
+					</var>
+					<var
+					dataname="JiraPassword"
+					datasourceid="69106a0d-99d9-41e0-bd7f-1af761164611"
+					variableid="d4637164-3891-47a1-a96e-77396f53f387"
+					variablename="JiraPassword">
+					</var>
+				</databinding>
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -77,6 +239,14 @@ rxversion="8.0">
 				<testcase
 				id="69106a0d-99d9-41e0-bd7f-1af761164611"
 				name="JiraJenkinsIntegration">
+					<setup
+					id="a27b0a46-faff-4da1-b45f-f238df053b7a"
+					name="setup">
+						<testmodule
+						id="f45a7d02-63d4-4f85-a2d5-917587f75809"
+						name="InitializeDefaultConfiguration">
+						</testmodule>
+					</setup>
 					<testcase
 					id="5eab11ea-e9f4-46d7-924e-b42d62cc5352"
 					name="TestCase">
@@ -92,6 +262,14 @@ rxversion="8.0">
 							name="FailTest">
 							</testmodule>
 						</smartfoldernode>
+						<teardown
+						id="222d5d23-dce2-4953-a7be-d39b25913e76"
+						name="teardown">
+							<testmodule
+							id="3a23fdd9-85a8-4906-bbdd-52a9e9779797"
+							name="AutoCreateNewIssueIfTestCaseFails">
+							</testmodule>
+						</teardown>
 					</testcase>
 				</testcase>
 			</testsuite>
@@ -115,5 +293,8 @@ rxversion="8.0">
 		</testconfiguration>
 	</testconfigurations>
 	<references>
+		<reference>
+			Ranorex_JiraIntegration.dll
+		</reference>
 	</references>
 </testsuitedoc>

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <Import Project="..\packages\Ranorex_JiraIntegration.8.1.0\build\Ranorex_JiraIntegration.props" Condition="Exists('..\packages\Ranorex_JiraIntegration.8.1.0\build\Ranorex_JiraIntegration.props')" />
   <PropertyGroup>
     <ProjectGuid>{33F9F499-399D-4026-91B9-42D70599F461}</ProjectGuid>
     <TargetFrameworkProfile />
@@ -95,6 +96,9 @@
     <Reference Include="Ranorex.Plugin.Wpf">
       <Private>False</Private>
     </Reference>
+    <Reference Include="Ranorex_JiraIntegration">
+      <HintPath>..\packages\Ranorex_JiraIntegration.8.1.0\lib\net452\Ranorex_JiraIntegration.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -172,6 +176,21 @@
       <repoid>b2021cd4-40d6-4151-8c44-9b9d09e34dda</repoid>
       <reporootid>b61a4d40-17bc-48d1-b278-c4a496d8d906</reporootid>
     </None>
+    <None Include="lib\net452\Atlassian.Jira.dll">
+      <id>1702991b-ef27-46d5-b3f3-ea1bbf44570b</id>
+    </None>
+    <None Include="lib\net452\Newtonsoft.Json.dll">
+      <id>0022863b-ced1-495e-ae94-65b8a8b9a0ea</id>
+    </None>
+    <None Include="lib\net452\RestSharp.dll">
+      <id>ae917c9f-9afe-49f9-9e94-5a61707ea7fe</id>
+    </None>
+    <None Include="packages.config">
+      <id>58220bd1-bc15-4af5-9caa-b76b0a5422e2</id>
+    </None>
+    <None Include="RanorexJiraCli.exe">
+      <id>f9758e39-16fc-44e8-8c2e-764a270bbf01</id>
+    </None>
     <None Include="TestStarted.rxrec">
       <BoundTo>6cca5f8f-7029-46a0-a6ba-fb14b6222a3b</BoundTo>
       <id>8cddb509-12ca-4513-8776-890aed6306a0</id>
@@ -195,4 +214,5 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+  <Import Project="..\packages\Ranorex_JiraIntegration.8.1.0\build\Ranorex_JiraIntegration.targets" Condition="Exists('..\packages\Ranorex_JiraIntegration.8.1.0\build\Ranorex_JiraIntegration.targets')" />
 </Project>

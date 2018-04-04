@@ -1,6 +1,6 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="TestStarted.rxrec" />
+    <Element value="JiraJenkinsIntegration.rxtst" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">

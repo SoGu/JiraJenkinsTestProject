@@ -8,6 +8,6 @@
       <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution JiraJenkinsIntegration[JiraJenkinsIntegration[app[]TestStarted.rxrec[]]]]&#xD;&#xA;Solution JiraJenkinsIntegration\JiraJenkinsIntegration\TestStarted.rxrec&#xD;&#xA;Solution JiraJenkinsIntegration" />
+  <ProjectBrowserState value="[Solution JiraJenkinsIntegration[JiraJenkinsIntegration[Reports[]app[]TestStarted.rxrec[]]]]&#xD;&#xA;Solution JiraJenkinsIntegration\JiraJenkinsIntegration\JiraJenkinsIntegration.rxtst&#xD;&#xA;Solution JiraJenkinsIntegration" />
   <StartupProject value="{33F9F499-399D-4026-91B9-42D70599F461}" />
 </Properties>
