@@ -55,7 +55,7 @@ rxversion="8.1">
 				<parameters>
 					<param
 					name="fail"
-					value="false">
+					value="true">
 					</param>
 					<param
 					name="JiraProjectKey"
@@ -71,7 +71,7 @@ rxversion="8.1">
 					</param>
 					<param
 					name="JiraDescription"
-					value="">
+					value="dgfs">
 					</param>
 					<param
 					name="JiraLabels"
@@ -272,12 +272,12 @@ rxversion="8.1">
 						id="222d5d23-dce2-4953-a7be-d39b25913e76"
 						name="teardown">
 							<testmodule
-							id="3a23fdd9-85a8-4906-bbdd-52a9e9779797"
-							name="AutoCreateNewIssueIfTestCaseFails">
-							</testmodule>
-							<testmodule
 							id="aab0195d-41ff-4a96-b66c-6a6cd5a29706"
 							name="UpdateJiraFields">
+							</testmodule>
+							<testmodule
+							id="3a23fdd9-85a8-4906-bbdd-52a9e9779797"
+							name="AutoCreateNewIssueIfTestCaseFails">
 							</testmodule>
 						</teardown>
 					</testcase>
