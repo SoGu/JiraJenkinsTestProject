@@ -33,12 +33,6 @@ rxversion="8.1">
 			name="teardown">
 			</teardown>
 			<testmodule
-			id="3a23fdd9-85a8-4906-bbdd-52a9e9779797"
-			name="AutoCreateNewIssueIfTestCaseFails"
-			ref="de17f33e-345f-416f-9f58-505b5e34aae3"
-			type="UserCode">
-			</testmodule>
-			<testmodule
 			id="45d9dbf5-4637-4889-992e-815466598a70"
 			name="TestStarted"
 			ref="4076e89c-1316-4488-be4a-448986c23303"
@@ -79,15 +73,15 @@ rxversion="8.1">
 					</param>
 					<param
 					name="StateClosed"
-					value="">
+					value="Done">
 					</param>
 					<param
 					name="StateReopen"
-					value="">
+					value="To Do">
 					</param>
 					<param
 					name="RxAutomationFieldName"
-					value="">
+					value="Rx Test Case Name">
 					</param>
 					<param
 					name="jqlQueryToConnectIssues"
@@ -237,6 +231,12 @@ rxversion="8.1">
 			ref="95ab0d23-ca9d-49e0-82a5-ef70c544ec1b"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="ff65ff41-c81f-4d23-b3ac-8c84dee6318f"
+			name="AutoHandleJiraIntegration"
+			ref="8b73dad1-ce2b-4ff6-8618-571f7b31fc6d"
+			type="UserCode">
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -276,8 +276,8 @@ rxversion="8.1">
 							name="UpdateJiraFields">
 							</testmodule>
 							<testmodule
-							id="3a23fdd9-85a8-4906-bbdd-52a9e9779797"
-							name="AutoCreateNewIssueIfTestCaseFails">
+							id="ff65ff41-c81f-4d23-b3ac-8c84dee6318f"
+							name="AutoHandleJiraIntegration">
 							</testmodule>
 						</teardown>
 					</testcase>

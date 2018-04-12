@@ -8,6 +8,6 @@
       <string>Ranorex_JiraIntegration, Version=1.0.6668.25678, Culture=neutral, PublicKeyToken=null</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution JiraJenkinsIntegration[JiraJenkinsIntegration[Reports[]app[]TestStarted.rxrec[]]]]&#xD;&#xA;Solution JiraJenkinsIntegration\JiraJenkinsIntegration\JiraJenkinsIntegration.rxtst&#xD;&#xA;Solution JiraJenkinsIntegration" />
+  <ProjectBrowserState value="[Solution JiraJenkinsIntegration[JiraJenkinsIntegration[Reports[]app[]TestStarted.rxrec[]]]]&#xD;&#xA;Solution JiraJenkinsIntegration\JiraJenkinsIntegration\JiraJenkinsIntegration.rxtst&#xD;&#xA;Solution JiraJenkinsIntegration\JiraJenkinsIntegration\Reports\TestStarted20180220_075417.rxlog" />
   <StartupProject value="{33F9F499-399D-4026-91B9-42D70599F461}" />
 </Properties>
